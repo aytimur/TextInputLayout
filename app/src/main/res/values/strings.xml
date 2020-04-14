@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TextInputLayout</string>
+    <string name="kullaniciadi">Kullanıcı adınızı giriniz.</string>
+    <string name="helpertext">Örnek:ibrahimaytimur0@gmail.com</string>
+    <string name="helpertextparola">Örnek:AndroidM.35</string>
+    <string name="parola">Parolanızı giriniz.</string>
+    <string name="btnuyeol">Uye ol</string>
+</resources>

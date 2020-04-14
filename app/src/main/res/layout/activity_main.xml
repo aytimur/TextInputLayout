@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="30dp">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        app:counterEnabled="true"
+        app:counterMaxLength="25"
+        app:hintEnabled="true"
+        app:hintAnimationEnabled="true"
+        android:textColorHint="@color/colorPrimary"
+        app:hintTextColor="@color/colorPrimary"
+        app:counterTextColor="@color/colorPrimary"
+        app:counterOverflowTextColor="@color/cofTextColor"
+        app:helperText="@string/helpertext"
+        android:background="@drawable/textinputlayout_background"
+        android:layout_marginBottom="15dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/kullaniciadi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/kullaniciadi"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true"
+        app:counterEnabled="true"
+        app:counterMaxLength="11"
+        app:hintEnabled="true"
+        app:hintAnimationEnabled="true"
+        android:textColorHint="@color/colorPrimary"
+        app:hintTextColor="@color/colorPrimary"
+        app:counterTextColor="@color/colorPrimary"
+        app:counterOverflowTextColor="@color/cofTextColor"
+        app:helperText="@string/helpertextparola"
+        android:background="@drawable/textinputlayout_background"
+        android:layout_marginBottom="15dp"
+
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/colorPrimary"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/parola"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/parola"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimary"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnuyeol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnuyeol"
+        android:textColor="@color/btnTextColor"
+        android:textStyle="bold"
+        android:background="@drawable/btn_background"/>
+</LinearLayout>
